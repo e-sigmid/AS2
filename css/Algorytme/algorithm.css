@@ -1,0 +1,172 @@
+.container{
+  display: flex;
+}
+
+.back {
+  border-radius: 10px;
+  background-color:#b75d69;
+
+}
+
+a {
+  border-radius: 10px;
+  background: #edafb8;
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-family: sans-serif;
+}
+
+nav a {
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  padding: 20px;
+  margin: 5px;
+  flex: 1;
+}
+
+a:hover{
+    background-color: #e5989b;
+}
+  
+  
+  
+  
+  body {
+    background-color: #f7a399;
+  }
+  
+  .wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+  }
+  
+  .wrapper>* {
+    padding: 10px;
+    margin: 10px;
+    flex: 1 100%;
+    border-radius: 10px;
+   
+  }
+  
+
+  
+  .footer {
+    background: #ffe3e0;
+    height: 80px;
+    border-radius: 10px;
+    text-align: center;
+    font-family: sans-serif;
+  }
+  
+  .main {
+    text-align: left;
+    background: #ffe3e0;
+    height: 150px;
+    font-size: 24px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    font-family: sans-serif;
+  }
+
+  .main .mainBox {
+    background: #ffffff;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .main .form button {
+    text-align: left;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .aside1 {
+    text-align: left;
+    background: #ffe3e0;
+    border-radius: 10px;
+    text-align: left;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .aside1 .guess {
+    background: #ffffff;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  .aside2 {
+    background: #ffe3e0;
+    height: 200px;
+  border-radius: 10px;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  }
+
+  .aside2 .week {
+    background: #ffffff;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    font-family: sans-serif;
+  }
+  
+  .aside3 {
+  background: #ffe3e0;
+  height: 80px;
+  display: block;
+  border-radius: 10px;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  }
+.aside3 .clock{
+  background: #ffffff;
+  height: 50px;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  font-family: sans-serif;
+}
+
+  
+  @media all and (min-width: 800px) {
+    .main {
+      flex: 3;
+    }
+  
+    .aside1 {
+      order: 1;
+    }
+  
+    .aside2 {
+      order: 3;
+    }
+
+    .aside3 {
+      order: 3;
+    }
+  
+    .main {
+      order: 2;
+    }
+  
+    .footer {
+      order: 4;
+    }
+  }
+  
+  @media all and (min-width: 600px) {
+    .aside {
+      flex: 1;
+    }
+  }

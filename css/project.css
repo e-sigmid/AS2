@@ -1,0 +1,102 @@
+*{
+    margin: 5px;
+    box-sizing: border-box;
+}
+
+body{
+    height: 95vh;
+    background: (#e7ecef);
+    font-family: sans-serif;
+    text-align: center;
+    color: (#e7ecef);
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    display: flex;
+}
+
+.back {
+    border-radius: 10px;
+    background-color:rgb(32, 85, 120);
+}
+
+a {
+    border-radius: 10px;
+    background: #6096ba;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-family: sans-serif;
+}
+
+nav a {
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px;
+    margin: 5px;
+    flex: 1;
+}
+
+a:hover{
+    background-color:rgb(39, 106, 158);
+}
+
+header{
+    border-radius: 10px;
+    background:#98c1d9;
+    padding: 2em 0 2em 0;
+}
+
+.main{
+    display: flex;
+    flex: 1;
+}
+
+.one {
+    border-radius: 10px;
+    background:rgb(24, 70, 161);
+    padding: 3em 0 3em 0;
+    flex: 1 1 100px;
+}
+
+.two{
+    border-radius: 10px;
+    background:rgb(24, 70, 161);
+    padding: 3em 0 3em 0;
+    flex: 1 1 100px;
+}
+
+.three{
+    border-radius: 10px;
+    background:rgb(24, 70, 161);
+    padding: 3em 0 3em 0;
+    flex: 1 1 100px;
+}
+
+.four{
+    border-radius: 10px;
+    background:rgb(24, 70, 161);
+    padding: 3em 0 3em 0;
+    flex: 1 1 100px;
+}
+
+.five{
+    border-radius: 10px;
+    background:rgb(24, 70, 161);
+    padding: 3em 0 3em 0;
+    flex: 1 1 100px;
+
+}
+
+
+@media all and (max-width: 550px){
+    .main{
+        flex-direction: column;
+    }
+    main{
+        padding:5em 0 5em 0 ;
+    }
+}

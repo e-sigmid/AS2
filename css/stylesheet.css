@@ -1,0 +1,95 @@
+*{
+    margin: 5px;
+    box-sizing: border-box;
+}
+
+body{
+    height: 95vh;
+    background-image: url(/images/sky.png);
+    background: #edf6f9;
+    font-family: sans-serif;
+    text-align: center;
+    color: rgb(#e7ecef);
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+  
+}
+
+.container{
+    display: flex;
+}
+
+.back {
+    border-radius: 10px;
+    background-color:rgb(32, 85, 120);
+}
+
+a {
+    border-radius: 10px;
+    background: #6096ba;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-family: sans-serif;
+}
+nav a {
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px;
+    margin: 5px;
+    flex: 1;
+}
+
+/*color of buttons when clicked/touched*/
+a:hover{
+    background-color:rgb(39, 106, 158);
+    flex: 1;
+}
+
+header{
+    border-radius: 10px;
+    background:#98c1d9;
+    padding: 2em 0 2em 0;
+}
+
+.main{
+    display: flex;
+    flex: 1;
+}
+
+.left {
+    border-radius: 10px;
+    background:#6096ba;
+    padding: 3em 0 3em 0;
+    flex: 1 1 100px;
+}
+
+main{
+    border-radius: 10px;
+    background:rgb(24, 70, 161);
+    padding: 3em 0 3em 0;
+    flex: 5 5 150px;
+}
+
+.right{
+    border-radius: 10px;
+    background:#6096ba;
+    padding: 3em 0 3em 0;
+    flex: 1 1 100px;
+}
+
+footer{
+    border-radius: 10px;
+    background:rgb(32, 85, 120);
+    padding: 1em 0 1em 0;
+}
+
+@media all and (max-width: 550px){
+    .main{
+        flex-direction: column;
+    }
+    main{
+        padding:5em 0 5em 0 ;
+    }
+}

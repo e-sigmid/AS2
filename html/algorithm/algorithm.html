@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>algorithm</title>
+<link rel="stylesheet" href="/css/Algorytme/algorithm.css">
+<title>flexbox</title>
+
+</head>
+<body onload="startTime()">
+   
+    <div class="back">
+        <nav class="container">
+            <a href="/index.html">home</a>
+            <a href="/html/about.html">about</a>
+            <a href="mailto:signe.midtbo@gmail.com">contact</a>
+            <a href="/html/project.html">projects</a>
+        </nav>
+        </div>
+
+<div class="wrapper">
+    <header class="header">
+    <h1 id="title">algorithm</h1>
+    </header>
+
+    <article class="main">
+        <div class="form">
+        <input type="number" min="1" max="100" class="glock9">
+         <button id="Meal">Generate</button>
+        </div>
+
+        <div class="mainBox"> 
+        <p id="nameList"> make a meal </p>
+        </div>
+    </article>
+
+
+    <aside class="aside aside1">
+        <div class="guess">
+         <ul id="gjett"></ul>
+            
+         <!-- Guess how many apples i have -->
+                 <script> 
+          /*Defines 4 variables, hvor den første referer til id meny på linje 11
+           De 3 siste er prompt - altså innskrivningsbokser*/
+         var gjett =document.getElementById("gjett");
+         let gjettet = prompt("Guess how many tomatos i have 0-100");
+           
+         let riktigTall = Math.floor(Math.random() * 101);
+             
+         if (gjettet === riktigTall) {
+         gjett.innerHTML="Right! I have " + gjettet  + ", the sum was " + riktigTall;
+         } else if (gjettet < riktigTall ){
+         gjett.innerHTML="Too little. You guessed " + gjettet + ", the sum was " + riktigTall;
+         } else 
+         gjett.innerHTML="Too much. You guessed " + gjettet + ", the sum was " + riktigTall;
+         
+          </script>
+             </div>
+    </aside>
+
+    <aside class="aside aside2">
+   <div class="week">
+    <div class="ends">
+    <p id="demo"></p>
+   </div>
+    <p id="weekend"></p>
+ </div>
+    </aside>
+
+    <aside class="aside aside3">
+        <div class="clock">
+        <p id="Klokke"></p>
+    </div>
+    </aside>
+
+
+    <footer class="footer">
+     #
+    </footer>
+
+    
+</body>
+</html>
+
+<script src="/js/arr.js"></script>
+<script src="/js/funclock.js"></script>
+<script src="/js/forWhile.js"></script>
+<script src="/js/storage.js"></script>
